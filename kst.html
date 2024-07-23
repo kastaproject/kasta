@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="x0-ua-compatible" content="ie=edge">
+    <title>KASTA</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div id="kst">
+        <h1>SOON</h1>
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/d8dd1a74150737.5c242162a22f0.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ipsum magni, molestias.</p>
+        <button id="buy">SOON</button>
+    </div>
+    <form id="form">
+        <input type="text" placeholder="Имя" id="user_name">
+        <input type="text" placeholder="Email" id="user_email">
+        <input type="text" placeholder="Телефон" id="user_phone">
+        <button id="order">SOON</button>
+    </form>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        let tg = window.Telegram.WebApp;
+        let buy = document.getElementById("buy");
+        let order = document.getElementById("order");
+
+        buy.addEventListener("click, () => {
+            document.getElementById("main").style.display = "none";
+            document.getElementById("for,").style.display = "block";
+            document.getElementById("user_name").value = tg.initDataUnsafe.user.firs_name + "" + tg.initDataUnsafe.user.last_name;
+        });
+
+        order.addEventListener("click"), ()=> {
+            tg.close();
+
+    </script>
+</body>
+</html>
